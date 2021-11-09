@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+
+
+#define  OK   1
+#define  ERROR   -1
+#define  MAX_SIZE  100
+typedef  int  Status ;
+typedef  int  ElemType ; 
+typedef  struct  sqlist
+{   ElemType  Elem_array[MAX_SIZE] ;
+int    length ;
+} SqList ;
+ Status Init_SqList( SqList *L ) 
+{  L->elem_array=( ElemType * )malloc(MAX_SIZE*sizeof( ElemType ) ) ;
+if ( !L -> elem_array ) return  ERROR ; 
+else {   L->length= 0 ;    return OK ;  }  
+}
+Status Insert_SqList(Sqlist *L，int i ，ElemType e)
+ {   int j ;
+if  ( i<0||i>L->length-1)   return  ERROR ;
+if  (L->length>=MAX_SIZE)
+{    printf(“线性表溢出!\n”);  return  ERROR ;  }
+for  ( j=L->length–1; j>=i-1; --j )
+L->Elem_array[j+1]=L->Elem_array[j];
+/*  i-1位置以后的所有结点后移  */
+L->Elem_array[i-1]=e;    /*  在i-1位置插入结点  */
+L->length++ ;
+return  OK ;  
+}
+if  (L->length==0)
+{  printf(“线性表L为空!\n”); return ERROR;  } 
+else if ( i<1||i>L->length ) 
+{  printf(“要删除的数据元素不存在!\n”) ; 
+return ERROR ; }
+else  {  x=L->Elem_array[i-1] ;   /*保存结点的值*/
+for ( k=i ;  k<L->length ; k++) 
+      L->Elem_array[k-1]=L->Elem_array[k];
+             /*  i位置以后的所有结点前移  */
+L->length--;  return (x);
+}
+} 
+
+Status  Locate_Delete_SqList(Sqlist *L，ElemType x)
+     /*  删除线性表L中值为x的第一个结点  */
+{  int  i=0 , k ; 
+while  (i<L->length)      /*查找值为x的第一个结点*/
+{   if  (L->Elem_array[i]!=x )  i++ ; 
+else  
+   {  for ( k=i+1; k< L->length; k++)
+           L->Elem_array[k-1]=L->Elem_array[k]; 
+       L->length--;  break ; 
+   }
+}
+if  (i>L->length)
+{    printf(“要删除的数据元素不存在!\n”) ; 
+return ERROR ;  }
+return  OK;    
+} 
