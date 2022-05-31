@@ -1,0 +1,165 @@
+*{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    text-decoration:none;
+    font-family:"Î¢ÈíÑÅºÚ", "ËÎÌå", "ºÚÌå";
+    font-weight:normal;}
+/*Ò³Í·*/
+
+/*ÇëµÇÂ¼  ×¢²á .....*/
+#headCon>div{
+    width:1200px;
+    margin:auto;
+    margin-top:10px;
+}
+#headCon>div>p{
+    float:left;
+    font-size:14px;
+    color:#999;}
+#headCon>div>ol{
+    width:300px;
+    float:right;
+    overflow:hidden;}
+#headCon>div>ol>li{
+    overflow:hidden;
+    float:left;}
+#headCon>div>ol>li>a{
+    font-size:14px;
+    color:#999;
+    float:left;
+    margin-right:10px;
+}
+#headCon>div>ol>li>a:hover{
+    color:#fb0000;}
+#headCon>div>ol>a{
+    width:76px;
+    height:14px;
+    text-align:center;
+    line-height:14px;
+    float:left;
+    font-size:14px;
+    color:#999;
+    margin-top:3px;}
+#headCon>div>ol>a:hover{
+    color:#fb0000;}
+#headCon>div>ol>.shoppingCar{
+    width:120px;
+    border:none;
+    height:20px;
+    float:left;
+    overflow:hidden;}
+#headCon>div>ol>.shoppingCar>i{
+    float:left;
+    width:22px;
+    height:18px;
+    background:url(../images/sprite.png) no-repeat 0px 0px;}
+#headCon>div>ol>.shoppingCar>span{
+    float:left;
+    margin-left:10px;}
+
+#main_link>ul{
+    width:1400px;
+    margin: 0 auto;
+    overflow:hidden;
+    margin-top:30px;}
+#main_link>ul>a{
+    float:left;
+    font-size: 15px;
+}
+#main_link>ul>a>li{
+    width:92px;
+    height:63px;
+    background:url(../images/sprite.png) no-repeat -22px 0px;}
+#main_link>ul>ol{
+    float:left;
+    overflow:hidden;
+    margin-left: 300px;
+}
+#main_link>ul>ol>li{
+    float:left;
+    margin-top:25px;
+    margin-right:100px;
+
+}
+
+#main_link>ul>ol>li>a{
+    font-size:15px;
+    color:#4c4c4c;
+}
+#main_link>ul>ol>li>a:hover{
+    color:#fb0000;}
+#main_link>ul>ol>li>.first{
+    color:#fb0000;}
+#main_link>ul>ol>.search{
+    margin-top:20px;
+    margin-left:90px;}
+#main_link>ul>ol>.search>input{
+    width:254px;
+    height:30px;
+    border:1px solid #fb0000;
+    border-radius:20px;
+    outline:none;
+    color:#999;
+    padding-left:16px;
+    font-size:16px;}
+#main_link>ul>ol>.search>button{
+    width:29px;
+    height:29px;
+    background:url(../images/sprite.png) no-repeat -115px 0px;
+    border:none;
+    vertical-align:middle;
+    margin-left:-60px;
+}
+
+
+div.price{
+    color: red;
+}
+div.txt{
+    text-align: center;
+    padding-bottom: 0;
+    font-size: 22px;
+
+}
+div.wrap{
+    margin:0 auto;
+    width: 1650px;
+    height: 1100px;
+}
+
+div.two{
+    clear: both;
+}
+div.item{
+    float: left;
+    width: 300px;
+    height: 388px;
+    margin: 40px 20px 0 0;
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    transition: all .5s;
+
+}
+img.p1{
+    width: 100%;
+    height: 100%;
+}
+div.comment{
+    position: absolute;
+    bottom: -150px;
+    height: 150px;
+    width: 300px;
+    background-color: #F60;
+    transition: all .5s;
+}
+.item:hover {
+    top:-5px;
+    box-shadow: 0 0 15px #999;
+    cursor: pointer;
+}
+.item:hover .comment{
+    bottom: 0px;
+}

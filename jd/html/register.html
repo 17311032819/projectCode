@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>欢迎注册！</title>
+    <script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="shortcut icon" href="images/logo_01.png">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+
+<body>
+<!--页头-->
+<div id="headCon">
+    <div>
+        <p>我的甜品 你的心~</p>
+    </div>
+    <ul>
+        <a href="index.html"><li></li></a>
+        <span></span>
+        <p>请注册</p>
+    </ul>
+</div>
+<!--内容-->
+<div id="contentCon">
+    <div>
+        <p>手机注册</p>
+        <li>邮箱注册</li>
+    </div>
+    <form>
+        <ul>
+            <p>手机号码：</p>
+            <input type="text" placeholder="请输入手机号码">
+        </ul>
+        <ul class="box02">
+            <p>设置密码：</p>
+            <input type="password" placeholder="密码长度应为6~16个字符">
+        </ul>
+        <ul class="box02">
+            <p>确认密码：</p>
+            <input type="password" placeholder="请再次输入密码">
+        </ul>
+
+        <div>
+            <p>图形验证码：</p>
+            <input type="text" placeholder="图形验证码">
+            <canvas id="canvas" width="120" height="40"></canvas>
+            <a href="#" id="changeImg">看不清，换一张</a>
+            <script>
+                /**生成一个随机数**/
+                function randomNum(min,max){
+                    return Math.floor( Math.random()*(max-min)+min);
+                }
+                /**生成一个随机色**/
+                function randomColor(min,max){
+                    var r = randomNum(min,max);
+                    var g = randomNum(min,max);
+                    var b = randomNum(min,max);
+                    return "rgb("+r+","+g+","+b+")";
+                }
+                drawPic();
+                document.getElementById("changeImg").onclick = function(e){
+                    e.preventDefault();
+                    drawPic();
+                }
+
+                /**绘制验证码图片**/
+                function drawPic(){
+                    var canvas=document.getElementById("canvas");
+                    var width=canvas.width;
+                    var height=canvas.height;
+                    var ctx = canvas.getContext('2d');
+                    ctx.textBaseline = 'bottom';
+
+                    /**绘制背景色**/
+                    ctx.fillStyle = randomColor(180,240); //颜色若太深可能导致看不清
+                    ctx.fillRect(0,0,width,height);
+                    /**绘制文字**/
+                    var str = 'ABCEFGHJKLMNPQRSTWXY123456789';
+                    for(var i=0; i<4; i++){
+                        var txt = str[randomNum(0,str.length)];
+                        ctx.fillStyle = randomColor(50,160);  //随机生成字体颜色
+                        ctx.font = randomNum(15,40)+'px SimHei'; //随机生成字体大小
+                        var x = 10+i*25;
+                        var y = randomNum(25,45);
+                        var deg = randomNum(-45, 45);
+                        //修改坐标原点和旋转角度
+                        ctx.translate(x,y);
+                        ctx.rotate(deg*Math.PI/180);
+                        ctx.fillText(txt, 0,0);
+                        //恢复坐标原点和旋转角度
+                        ctx.rotate(-deg*Math.PI/180);
+                        ctx.translate(-x,-y);
+                    }
+                    /**绘制干扰线**/
+                    for(var i=0; i<8; i++){
+                        ctx.strokeStyle = randomColor(40,180);
+                        ctx.beginPath();
+                        ctx.moveTo( randomNum(0,width), randomNum(0,height) );
+                        ctx.lineTo( randomNum(0,width), randomNum(0,height) );
+                        ctx.stroke();
+                    }
+                    /**绘制干扰点**/
+                    for(var i=0; i<100; i++){
+                        ctx.fillStyle = randomColor(0,255);
+                        ctx.beginPath();
+                        ctx.arc(randomNum(0,width),randomNum(0,height), 1, 0, 2*Math.PI);
+                        ctx.fill();
+                    }
+                }
+            </script>
+        </div>
+        <ol>
+            <p>手机验证码：</p>
+            <input type="tel" placeholder="手机验证码">
+            <!-- <a href="#">获取验证码</a> -->
+            <input type="button" id="btn" value="获取验证码" onclick="sendemail()">
+            <script src="js/Verification_Code.js"></script>
+        </ol>
+        <li>
+            <input type="radio">
+            <p>我已阅读并同意</p>
+            <a href="#">《甜心服务协议》</a>
+        </li>
+        <!-- <a href="login.html">注册</a> -->
+        <input id="add" type="button" value="注册">
+        <!--   <input id="delete" type="button" value="删除" /> -->
+        <!-- <input id="update" type="button" value="修改"> -->
+        <script src="js/register.js"></script>
+    </form>
+</div>
+<!--页脚-->
+<div id="footCon">
+    <ul>
+        <li>
+            <div class="cold"></div>
+            <span></span>
+            <ol>
+                <h2>18小时低温</h2>
+                <p>全程冷链配送</p>
+            </ol>
+        </li>
+        <li>
+            <div class="wuxiu"></div>
+            <span></span>
+            <ol>
+                <h2>7*24小时营业</h2>
+                <p>全年无休</p>
+            </ol>
+        </li>
+        <li>
+            <div class="baoyou"></div>
+            <span></span>
+            <ol>
+                <h2>满88包邮</h2>
+                <p>次日送达</p>
+            </ol>
+        </li>
+    </ul>
+    <ol>
+        <li>
+            <i></i>
+            <a href="index.html">www.sweetlove.com</a>
+            <div>
+                <a href="http://www.weibo.com" class="weibo"></a>
+                <a href="http://wx.qq.com" class="weixin"></a>
+            </div>
+        </li>
+        <ul>
+            <li class="text01">
+                <p>关于甜心</p>
+                <span></span>
+                <a href="#">媒体报道</a>
+                <a href="#">知识产权</a>
+                <a href="#">加入我们</a>
+            </li>
+            <li>
+                <p>帮助中心</p>
+                <span></span>
+                <a href="#">购物指南</a>
+                <a href="#">订单管理</a>
+                <a href="#">常见问题</a>
+            </li>
+            <li>
+                <p>服务支持</p>
+                <span></span>
+                <a href="#">服务保障</a>
+                <a href="#">用户协议</a>
+                <a href="#">售后服务</a>
+            </li>
+            <li>
+                <p>商业合作</p>
+                <span></span>
+                <a href="#">集合采购</a>
+                <a href="#">品牌合作</a>
+                <a href="#">媒体合作</a>
+            </li>
+        </ul>
+        <div>
+            <p>联系我们</p>
+            <h2>400-8888-000</h2>
+            <span>24小时服务热线</span>
+            <a href="#">在线客服</a>
+        </div>
+    </ol>
+    <div></div>
+    <li>
+        <p>Copyright © 2021 sweetlove.com Inc.All Rights Reserved. 成都甜心食品有限公司</p>
+        <span>版权所有 蜀ICP备14049996号-1 增值电信业务经营许可证：川ICP证160061号</span>
+    </li>
+</div>
+</body>
+</html>
