@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="common/head"/>
+    <title>迷你电商系统</title>
+</head>
+<body>
+<nav th:replace="common/navbar"></nav>
+
+<div class="container">
+    <nav class="navbar navbar-light">
+        <a class="navbar navbar-text <%if(cid == null && s == null){%>navbar-toggler<%}%>" th:href="@{/}">最新热卖</a>
+        <a th:each="category: ${categories}" class="navbar navbar-text <%if(String.valueOf(category.getId()).equals(cid)){%>navbar-toggler<%}%>" th:href="@{/products/{cid}(cid=${category.id})}" th:text="${category.name}"></a>
+
+        <form class="form-inline" th:action="@{/products}">
+            <input class="form-control mr-sm-2" name="s" type="search" placeholder="请输入关键字" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search">搜索</i></button>
+        </form>
+    </nav>
+    <div class="row">
+        <div th:each="product:${products}" class="col-md-3 my-3">
+            <div class="card w-100">
+                <img class="card-img-top" th:src="@{/product-image/{image}(image=${product.image})}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" th:text="${product.name}">
+                    </h5>
+                    <h6>
+                        市价：<s th:text="${product.marketPrice}"></s>
+                    </h6>
+                    <h6>价格:￥<span th:text="${product.price}"/>
+                    </h6>
+                    <h6>类别: <span th:text="${product.category.name}"/>
+                    </h6>
+                    <h6>已售: <span th:text="${product.sales}"/>件
+                    </h6>
+                    <div class="mt-3 d-flex justify-content-between">
+                        <a class="btn btn-dark" th:href="@{/cart/add/{pid}(pid=${product.id})}">加入购物车</a>
+                        <a class="btn btn-primary" th:href="@{/order/now/{pid}(pid=${product.id})}">立即购买</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<th:block th:include="common/foot"/>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="common/head"/>
+    <title>迷你电商系统</title>
+</head>
+<body>
+<nav th:replace="common/navbar"></nav>
+<div class="container">
+    <div class="card w-50 mx-auto my-5">
+        <div class="card-header text-center">会员登陆</div>
+        <div class="card-body">
+            <form th:action="@{/login}" method="post">
+                <div class="form-group">
+                    <label>电子邮件</label>
+                    <input type="text" name="username" class="form-control" placeholder="请输入账户或电子邮件">
+                </div>
+                <div class="form-group">
+                    <label>密码</label>
+                    <input type="password" name="password" class="form-control" placeholder="请输入密码">
+                </div>
+                <p class="text-danger" th:if="${error != null}" th:text="${error}"></p>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">登陆</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<th:block th:include="common/foot"/>
+</body>
+</html>

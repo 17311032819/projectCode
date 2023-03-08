@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/com/Bean/Tb_class.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/Bean/Tb_record.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/Bean/Tb_teacher.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/dao/ClassOp.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/dao/CourseOp.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/dao/MajorOp.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/dao/RecordOp.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/dao/StuinfoOp.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/dao/TeacherOp.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/db/Db.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/db/connectiontomysql.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/ClassAdd.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/ClassManagement.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/CourseAdd.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/CourseList.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/ImageEg.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/MainFrame.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/MajorList.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/Major_AddFm.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/RecordAdd.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/RecordManagement.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/Selectrecord.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/StuAdd.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/StuInfoManagement.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/StuList1.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/StuLogin.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/StuSelectCourse.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/TeacherAdd.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/TeacherInfoManagement.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/ui/TeacherList.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/egtool/CondbcomboBoxeg.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/egtool/Judgeidexit.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/egtool/MajorTableModel.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/egtool/Mf.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/egtool/MyRecordTableModel.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/egtool/MyTableModel.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/egtool/StuTableModel.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/egtool/TableModeByRequired.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/egtool/TableRecordModify.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/egtool/TeacherTableModel.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/egtool/comboxeg.java" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

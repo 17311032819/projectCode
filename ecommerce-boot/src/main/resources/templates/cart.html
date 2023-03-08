@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="common/head"/>
+    <title>迷你电商系统</title>
+    <style>
+        .table tbody td {
+            vertical-align: middle;
+        }
+
+        .btn-incre, .btn-decre {
+            box-shadow: none;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+<nav th:replace="common/navbar"></nav>
+<div class="container my-3">
+    <div class="d-flex py-3"><h3>总金额: ￥<span th:text="${dcf.format(total)}"></span></h3> <a class="mx-3 btn btn-primary" th:href="@{/checkout}"><i class="fas fa-cash-register">结账</i></a></div>
+    <table class="table table-light">
+        <thead>
+        <tr>
+            <th scope="col">商品名称</th>
+            <th scope="col">类别</th>
+            <th scope="col">价格</th>
+            <th scope="col">立即购买</th>
+            <th scope="col">取消</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="item: ${session.cart}">
+            <td th:text="${item.product.name}"></td>
+            <td th:text="${item.product.category.name}"></td>
+            <td th:text="${dcf.format(item.product.price)}"></td>
+            <td>
+                <form th:action="@{order/now/{pid}(pid=${item.product.id})}" method="post" class="form-inline">
+                    <div class="form-group d-flex justify-content-between">
+                        <a class="btn bnt-sm btn-incre" th:href="@{/cart/inc/{id}(id=${item.product.id})}"><i class="fas fa-plus-square"></i></a>
+                        <input type="text" name="quantity" class="form-control"  th:value="${item.quantity}" readonly>
+                        <a class="btn btn-sm btn-decre" th:href="@{/cart/dec/{id}(id=${item.product.id})}"><i class="fas fa-minus-square"></i></a>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm">购买</button>
+                </form>
+            </td>
+            <td><a th:href="@{/cart/remove/{id}(id=${item.product.id})}" class="btn btn-sm btn-danger">删除</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<th:block th:include="common/foot"/>
+</body>
+</html>

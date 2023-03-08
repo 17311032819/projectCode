@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="common/head"/>
+    <title>迷你电商系统</title>
+</head>
+<body>
+<nav th:replace="common/navbar"></nav>
+<div class="container">
+    <div class="card-header my-3">所有订单</div>
+    <table class="table table-light">
+        <thead>
+        <tr>
+            <th scope="col">订单号</th>
+            <th scope="col">时间</th>
+            <th scope="col">总价</th>
+            <th scope="col">取消</th>
+        </tr>
+        </thead>
+        <tbody>
+        <th:block th:each="o: ${orders}">
+            <tr>
+                <td th:text="${o.id}"></td>
+                <td th:text="${df.format(o.date)}">
+                </td>
+                <td>
+                    ￥<span th:text="${dcf.format(o.total)}"></span>
+                </td>
+                <td><a class="btn btn-sm btn-danger" th:href="@{/order/cancel/{id}(id=${o.id})}">取消订单</a></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <table class="table table-striped">
+                        <tr th:each="oi: ${o.orderItems}">
+                            <td><img class="img-thumbnail" width="100px"
+                                     th:src="@{product-image/{image}(image=${oi.product.image})}"></td>
+                            <td th:text="${oi.product.name}">
+                            </td>
+                            <td>￥<span th:text="${dcf.format(oi.price)}"></span>
+                            </td>
+                            <td th:text="${oi.quantity}">
+                            </td>
+                            <td>￥<span th:text="${dcf.format(oi.total)}"></span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </th:block>
+        </tbody>
+    </table>
+</div>
+<th:block th:include="common/foot"/>
+</body>
+</body>
+</html>
