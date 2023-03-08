@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="70fef299-d114-4421-b1f7-4099b8b648d2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="module-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/com/db/connectiontomysql.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/dao/RecordOp.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/egtool/TableModeByRequired.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/ui/Selectrecord.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="1qSbFvZAlVJJBpfJY3LgsJfkIbs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../../android sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager" selected="Application.StuLogin">
+    <configuration name="BAStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Password.BAStudent" />
+      <module name="login2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Password.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StuInfoManagement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ui.StuInfoManagement" />
+      <module name="login2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StuLogin (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ui.StuLogin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StuLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ui.StuLogin" />
+      <module name="login2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stuCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Password.stuCode" />
+      <module name="login2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Password.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StuLogin" />
+        <item itemvalue="Application.stuCode" />
+        <item itemvalue="Application.StuLogin (1)" />
+        <item itemvalue="Application.BAStudent" />
+        <item itemvalue="Application.StuInfoManagement" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70fef299-d114-4421-b1f7-4099b8b648d2" name="Default Changelist" comment="" />
+      <created>1617075837018</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617075837018</updated>
+      <workItem from="1617075838385" duration="1174000" />
+      <workItem from="1617077173138" duration="189000" />
+      <workItem from="1617077960154" duration="225000" />
+      <workItem from="1617078204426" duration="51000" />
+      <workItem from="1617078268869" duration="134000" />
+      <workItem from="1617078419682" duration="1014000" />
+      <workItem from="1617096459728" duration="292000" />
+      <workItem from="1617185962399" duration="1160000" />
+      <workItem from="1617189214782" duration="729000" />
+      <workItem from="1617190204160" duration="660000" />
+      <workItem from="1617669497869" duration="12124000" />
+      <workItem from="1617843358650" duration="22000" />
+      <workItem from="1618223099872" duration="4000" />
+      <workItem from="1618224590365" duration="1010000" />
+      <workItem from="1618489921723" duration="1420000" />
+      <workItem from="1618491503654" duration="716000" />
+      <workItem from="1618492237838" duration="16000" />
+      <workItem from="1618492299549" duration="581000" />
+      <workItem from="1618495129488" duration="111000" />
+      <workItem from="1618827462241" duration="746000" />
+      <workItem from="1618878862056" duration="1166000" />
+      <workItem from="1618880072804" duration="297000" />
+      <workItem from="1618880391849" duration="1012000" />
+      <workItem from="1618881444666" duration="4052000" />
+      <workItem from="1618885573435" duration="3167000" />
+      <workItem from="1619002687702" duration="58000" />
+      <workItem from="1619004105271" duration="313000" />
+      <workItem from="1619004438345" duration="364000" />
+      <workItem from="1619005028188" duration="2152000" />
+      <workItem from="1619007264512" duration="3092000" />
+      <workItem from="1619015672181" duration="3668000" />
+      <workItem from="1619019362012" duration="3049000" />
+      <workItem from="1619052085622" duration="2650000" />
+      <workItem from="1619055017187" duration="20150000" />
+      <workItem from="1619079227429" duration="571000" />
+      <workItem from="1619079823928" duration="141000" />
+      <workItem from="1619083677066" duration="11115000" />
+      <workItem from="1619100546151" duration="2487000" />
+      <workItem from="1619146724234" duration="4516000" />
+      <workItem from="1619250648684" duration="5745000" />
+      <workItem from="1619260299046" duration="5711000" />
+      <workItem from="1619270277503" duration="7301000" />
+      <workItem from="1619278572688" duration="162000" />
+      <workItem from="1619279613392" duration="141000" />
+      <workItem from="1619311337529" duration="3396000" />
+      <workItem from="1619314854634" duration="6333000" />
+      <workItem from="1619347123072" duration="1902000" />
+      <workItem from="1619350202281" duration="1382000" />
+      <workItem from="1619352744010" duration="9478000" />
+      <workItem from="1619363206799" duration="1085000" />
+      <workItem from="1619364931446" duration="1190000" />
+      <workItem from="1619410621597" duration="3921000" />
+      <workItem from="1619435492238" duration="10264000" />
+      <workItem from="1619447238896" duration="761000" />
+      <workItem from="1619448017570" duration="2825000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
